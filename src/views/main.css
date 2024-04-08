@@ -1,0 +1,117 @@
+
+    body{
+        /* background: rgba(255, 195, 0, 1); */
+        width: auto;
+        height: 700px;
+        /* overflow: hidden; */
+        /* width: 100vh;
+        height: 100vw; */
+        position: relative;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .contain{
+        width: 1100px;
+        height: 600px;
+        background: white;
+        /* max-width: 98%; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+        /* position: relative; */
+        /* overflow: hidden; */
+    }
+    .content_main{
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 800px;
+        height: 400px;
+        margin-top: 30px;
+        margin-left: 200px;
+        position: absolute;
+    }
+    .crosswise{
+        padding-top: 20px;
+    padding-left: 120px;
+        display: flex;
+        flex-direction: row;
+        /* font-size: 26px; */
+    }
+    .crosswise button{
+        left: 408px;
+        top: 883px; 
+        width: 120px;
+        height: 50px;
+        opacity: 1;
+        border-radius: 4px;
+        background: rgba(55, 66, 250, 1);
+        box-shadow: 0px 2px 4px  rgba(136, 144, 194, 0.2), 0px 5px 15px  rgba(37, 44, 97, 0.15);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        margin-right:37px ;
+        font-size: 26px;
+        transition: transform 0.5s; 
+    }
+    .contain button:hover {
+        transform: scale(1.1); /* 将按钮放大1.2倍 */
+        background-color: rgb(68, 255, 51); /* 修改背景颜色为红色 */
+    }
+
+.second{
+    display: flex;
+    flex-direction: row;
+}
+.vertical{
+    padding-top: 10px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column; /* 垂直方向排列 */
+    align-items: flex-start; /* 元素左对齐 */
+    width: 200px;
+    font-size: 20px;
+
+}
+.vertical button{
+    /* //left: 408px; */
+    /* //top: 883px; */
+    width: 120px;
+        height: 50px;
+        opacity: 1;
+        border-radius: 4px;
+        background: rgba(55, 66, 250, 1);
+        box-shadow: 0px 2px 4px  rgba(136, 144, 194, 0.2), 0px 5px 15px  rgba(37, 44, 97, 0.15);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* //padding: 10px 20px 10px 20px; */
+        margin-top:17px ;
+        font-size: 25px;
+        transition: transform 0.5s; /* 过渡属性为 transform，过渡时间为 0.5 秒 */
+    }
+
+    .vertical button:hover {
+        transform: scale(1.1); /* 将按钮放大1.2倍 */
+        background-color: rgba(255, 87, 51, 1); /* 修改背景颜色为红色 */
+    }
+    @keyframes bounceIn {
+        0% {
+          transform: translateY(100%);
+        }
+        50% {
+          transform: translateY(-8%);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      .contain_main{
+        overflow: hidden;
+      }
+
